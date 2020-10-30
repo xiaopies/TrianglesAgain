@@ -21,17 +21,17 @@ public class Point{
     return y;
   }
   public double distanceTo(Point other){
-    x1 = other.x;
-    x2 = this.x;
-    y1= other.y;
-    y2 = other.y;
+    double x1 = other.x;
+    double x2 = this.x;
+    double y1= other.y;
+    double y2 = this.y;
     double x = Math.sqrt((x1-x2)*(x1-x2)+(y1-y2)*(y1-y2));
     return (x);
   }
   public boolean equals(Point other){
     return distanceTo(other) ==0;
   }
-  
+
 
 
 }
