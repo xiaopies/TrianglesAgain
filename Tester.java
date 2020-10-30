@@ -12,6 +12,11 @@ public class Tester{
     Point j = new Point(3, 0);
     Point k = new Point(0, 3*Math.sqrt(3));
 
+   Triangle first = new Triangle(a, b, c);
+   Triangle second = new Triangle(d, e, f);
+   Triangle third = new Triangle(i, j, k);
+   System.out.println(third);
+
 
 
 }
