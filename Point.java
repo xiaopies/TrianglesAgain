@@ -29,7 +29,7 @@ public class Point{
     return (x);
   }
   public boolean equals(Point other){
-    return other ! = null && distanceTo(other) ==0;
+    return other != null && distanceTo(other) ==0;
   }
 
 
