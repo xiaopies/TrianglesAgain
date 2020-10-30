@@ -27,7 +27,36 @@ public class Triangle{
     double y = Math.sqrt(s*(s-a)*(s-b)*(s-c));
     return (y);
   }
-
+  public String classify(){
+    double a = (double) (Math.round(v1.distanceTo(v2)*1000))/1000.0;
+    double b = (double) (Math.round(v1.distanceTo(v3)*1000))/1000.0;
+    double c = (double) (Math.round(v3.distanceTo(v2)*1000))/1000.0;
+    System.out.println(a);
+    System.out.println(b);
+    System.out.println(c);
+    if (a==b || a==c || b==c){
+      if (a==b && a==c && b==c){
+        return "equilateral";
+      }
+      return "isosceles";
+    }
+    return "scalene";
+  }
+  public String toString() {
+    return "v1(" + v1.getX() + ", " + v1.getY() + ")" +
+           "v2(" + v2.getX() + ", " + v2.getY() + ")" +
+           "v3(" + v3.getX() + ", " + v3.getY() + ")" ;
+  }
+  public void setVertex(int index, Point newP){
+    if (index == 1){
+      v1 = newP;
+    }
+    if (index == 2){
+      v2 = newP;
+    }
+    if (index == 3){
+      v3 = newP;
+    }
 
   }
 }
