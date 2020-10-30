@@ -20,6 +20,16 @@ public class Point{
   public double getY(){
     return y;
   }
+  public double distanceTo(Point other){
+    x1 = other.x;
+    x2 = this.x;
+    y1= other.y;
+    y2 = other.y;
+    double x = Math.sqrt((x1-x2)*(x1-x2)+(y1-y2)*(y1-y2));
+    double h = Math.round(x * 10000);
+    return (h/10000);
+  }
+  
 
 
 }
