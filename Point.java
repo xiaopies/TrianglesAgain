@@ -26,8 +26,10 @@ public class Point{
     y1= other.y;
     y2 = other.y;
     double x = Math.sqrt((x1-x2)*(x1-x2)+(y1-y2)*(y1-y2));
-    double h = Math.round(x * 10000);
-    return (h/10000);
+    return (x);
+  }
+  public boolean equals(Point other){
+    return distanceTo(other) ==0;
   }
   
 
