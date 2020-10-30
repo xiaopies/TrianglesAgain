@@ -31,9 +31,7 @@ public class Triangle{
     double a = (double) (Math.round(v1.distanceTo(v2)*1000))/1000.0;
     double b = (double) (Math.round(v1.distanceTo(v3)*1000))/1000.0;
     double c = (double) (Math.round(v3.distanceTo(v2)*1000))/1000.0;
-    System.out.println(a);
-    System.out.println(b);
-    System.out.println(c);
+    
     if (a==b || a==c || b==c){
       if (a==b && a==c && b==c){
         return "equilateral";
